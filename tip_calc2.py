@@ -10,8 +10,8 @@ elif service == 'bad':
     tip = 0.1 * bill
 else :
     print ('type \'good\', \'fair\' or \'bad\' only')
-print (f'Tip amount: ${tip}')
+print ('Tip amount: ${:.2f}'.format(tip))
 total = tip + bill
-print (f'Total amount: ${total}')
+print ('Total amount: ${:.2f}'.format(total))
 amount = total / split
-print (f'Amount per person: ${amount}')
+print ('Amount per person: ${:.2f}'.format(amount))
